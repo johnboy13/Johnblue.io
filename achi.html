@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lubena Portfolio</title>
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #000000, #1a1a1a, #333333);
+    min-height: 100vh;
+}
+
+
+
+
+.navbar {
+    background-color: gold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 13%;
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    z-index: 1000;
+    box-shadow: 
+        inset 0 -6px 10px rgba(0, 0, 0, 0.15), 
+        0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.navbar nav {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+    
+}
+
+.navbar a:hover {
+    color: black; 
+    text-decoration: underline;
+}
+
+.achi {
+    text-align: center;
+    padding: 140px 30px 30px;
+    flex: 1;
+
+}
+
+.achi h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 25px; 
+}
+
+
+.achi-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.photo {
+    background: linear-gradient(to bottom, #ffffff, #cccccc, #333333, #000000);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+.photo img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.photo img:hover {
+    opacity: 0.8;
+    transform: scale(1.05); 
+}
+
+.photo h3 {
+    font-size: 22px;
+    color: white;
+    margin-top: 10px;
+}
+
+.photo p {
+    color: #ffffff;
+    font-size: 20px; 
+}
+
+footer {
+    background-color: gold;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    border-top: 3px solid white;
+    font-size: 0.9rem;
+    margin-top: auto; 
+    box-shadow: 
+        inset 0 -6px 10px rgba(0, 0, 0, 0.15), 
+        0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+    </style>
+
+    
+</head>
+<body>
+
+    <div class="navbar">  
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="achi.html">Achievements</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+    </div>
+    
+    <section class="achi">
+        <h1>My Achievements</h1>
+
+        <div class="achi-container">
+
+            
+            <div class="photo">
+                <img src="https://i.pinimg.com/474x/38/8f/77/388f77757a14741f977245e8e9dffbc3.jpg" alt="me">
+                <h3>2023</h3>
+                <p>Inter Baranggay Champion<br>Mythical five<br>Intrams Champion</p>
+            </div>
+
+            
+            <div class="photo">
+                <img src="https://i.pinimg.com/474x/da/37/e7/da37e7f395744a242c4efc846be06f78.jpg" alt="aslo-me">
+                <h3>2023</h3>
+                <p>Inter School 3rd place in AAPS</p>
+            </div>
+
+            
+            <div class="photo">
+                <img src="https://i.pinimg.com/474x/a7/5e/ab/a75eabd417c42fd19c2a28e549b6f5a3.jpg" alt="me-again">
+                <h3>2024</h3>
+                <p>SK LEAGUE IN PROVINCE CHAMPION</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 All Rights Reserved.</p>
+    </footer>
+
+
+</body>
+</html>
